@@ -48,7 +48,7 @@ extracts, and how many Hunt Dollars you've made or lost. Everything is worked ou
 | Play Hunt in **Borderless** (windowed fullscreen) on your **main monitor** | The overlay can't draw over exclusive fullscreen, and only the main monitor is read |
 | Keep the game in **English**, with Windows' **English (United States)** language installed | The Mission Summary is read as text by Windows' English text recognition (the app warns you if it's missing) |
 | Use a **16:9** screen (1080p, 1440p, 4K) | Screen positions are tuned for 16:9; ultrawide may miss kills/money |
-| After a match, leave the **Mission Summary up ~20 seconds**, with Hunt in front | Kills show in ~2 s, Hunt Dollars ~15 s in |
+| After a match, **stay on the Mission Summary about 10-15 seconds**, with Hunt in front, until your kills and Hunt Dollars update on the overlay | Kills show in ~2 s, Hunt Dollars ~10-15 s in. Skipped it? Open **View Last Mission** and press **Ctrl+Shift+R**, or use **Adjust stats** |
 
 ---
 
