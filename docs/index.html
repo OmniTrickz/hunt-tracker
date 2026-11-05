@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hunt Tracker: session stats overlay for Hunt: Showdown 1896</title>
+  <meta name="description" content="A see-through overlay that tracks your kills, deaths, extracts and Hunt Dollars every session in Hunt: Showdown 1896. Free version, plus a Full version with OBS streaming and more.">
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="icon.png" alt="">Hunt Tracker</a>
+    <nav class="top">
+      <a href="#features" class="hide-sm">Features</a>
+      <a href="#how" class="hide-sm">How it works</a>
+      <a href="#pricing">Free vs Full</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <div class="eyebrow">For Hunt: Showdown 1896</div>
+      <h1>Your session, <em>scored live</em>.</h1>
+      <p class="lede">A see-through card in the corner of your screen that keeps count while you play: kills,
+        deaths, extracts and the Hunt Dollars you've made or lost tonight. Clicks go straight through to the game.</p>
+      <div class="btns">
+        <a class="btn primary" href="https://github.com/OmniTrickz/hunt-tracker/releases/latest">Download for Windows</a>
+        <a class="btn" href="#pricing">Free vs Full</a>
+      </div>
+      <p class="small-note">Windows 10/11 · Created by OmniTrickz</p>
+    </div>
+    <img class="shot" src="overlay.png" alt="The Hunt Tracker overlay showing kills and deaths, K/D, extracts and Hunt Dollars net with gained and spent">
+  </section>
+
+  <section id="features">
+    <h2>What it does</h2>
+    <p class="sub">No account. Point it at your Hunt folder once and it counts from then on.</p>
+    <div class="grid3">
+      <div class="card"><span class="icon">✦</span><h3>Kills, deaths, K/D</h3>
+        <p>Read from your Mission Summary after every match.</p></div>
+      <div class="card"><span class="icon">⇱</span><h3>Extracts</h3>
+        <p>Matches you made it out of, out of matches played.</p></div>
+      <div class="card"><span class="icon">$</span><h3>Hunt Dollars, net</h3>
+        <p>Gained, spent and your real total, from your lobby balance.</p></div>
+      <div class="card"><span class="icon">☰</span><h3>History and charts</h3>
+        <p>Every session saved on your PC. K/D, kills per match and money over 1, 3, 7 or 30 days, or all time.</p></div>
+      <div class="card"><span class="icon">◉</span><h3>Stream it with OBS</h3>
+        <p>Add your stats as an OBS Browser Source, on one PC or a separate streaming PC. Built-in setup guide.</p></div>
+      <div class="card"><span class="icon">◫</span><h3>Make it yours</h3>
+        <p>Move it, resize it (60-250%), hide the stats you don't want, and fix any number in one click.</p></div>
+    </div>
+  </section>
+
+  <section id="how">
+    <h2>How it works</h2>
+    <p class="sub">It never touches the game. It only reads what Hunt already writes to your disk and shows on screen.</p>
+    <div class="steps">
+      <div class="step"><div><h3>Follows Hunt's log file</h3>
+        <p>Match starts, deaths and match ends come from the log Hunt writes while you play.</p></div></div>
+      <div class="step"><div><h3>Reads the Mission Summary</h3>
+        <p>Kills and Hunt Dollars are read with Windows' built-in text recognition. The screen is read in memory and
+          thrown away; nothing is saved or sent.</p></div></div>
+      <div class="step"><div><h3>Checks your lobby balance</h3>
+        <p>Your balance between matches gives your true net, including what you spent.</p></div></div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Free vs Full</h2>
+    <p class="sub">Use the free version as long as you like. The Full version unlocks everything.</p>
+    <div class="plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <div class="price">$0</div>
+        <div class="alt-prices">Forever</div>
+        <ul>
+          <li>Kills, deaths, extracts, Hunt Dollars</li>
+          <li>Session history and charts</li>
+          <li>Move, resize and adjust stats</li>
+          <li>Overlay shows a "Free version" watermark</li>
+        </ul>
+        <a class="btn" href="https://github.com/OmniTrickz/hunt-tracker/releases/latest">Download</a>
+      </div>
+      <div class="plan featured">
+        <h3>Full <span class="badge">7-day free trial</span></h3>
+        <div class="price">$4 <small>/ month</small></div>
+        <div class="alt-prices">or $35 / year</div>
+        <ul>
+          <li>Everything in Free, with no watermark</li>
+          <li><b>OBS setup</b>: Browser Source for one or two PCs, plus a step-by-step guide</li>
+          <li><b>Hide info</b>: hide K/D, Extracts or Hunt Dollars</li>
+          <li>Reset buttons</li>
+          <li>Every future update, signed and installed in one click</li>
+          <li>Cancel anytime; it keeps working to the end of your billing period</li>
+        </ul>
+        <a class="btn primary" href="#pricing" aria-disabled="true">Coming soon</a>
+      </div>
+    </div>
+    <p class="small-note">Until the Full version goes on sale, every download includes all features.
+      Payments are handled by our reseller, Lemon Squeezy, who also handles sales tax.
+      See the <a href="refund.html">refund policy</a>.</p>
+  </section>
+
+  <section id="faq">
+    <h2>Questions</h2>
+    <details><summary>Is it safe to use with Easy Anti-Cheat?</summary>
+      <p>Hunt Tracker doesn't read or change game memory, inject anything, or draw inside the game. The overlay is an
+        ordinary window on top, and it reads Hunt's log file and the screen. We can't speak for Crytek or Easy
+        Anti-Cheat; only they decide what their anti-cheat allows.</p></details>
+    <details><summary>What do I need?</summary>
+      <p>Windows 10 or 11, Hunt in Borderless (windowed fullscreen) on your main monitor, the game in English, and
+        ideally a 16:9 screen (1080p, 1440p or 4K).</p></details>
+    <details><summary>Does it collect my data?</summary>
+      <p>No. Your stats stay on your PC. Online, it only checks GitHub for updates (and, for the Full version, checks
+        your license with Lemon Squeezy). See the <a href="privacy.html">privacy policy</a>.</p></details>
+    <details><summary>Why does Windows warn me when I install it?</summary>
+      <p>The installer isn't signed with a paid Windows certificate yet. Only download it from the official GitHub
+        releases page, then choose More info, then Run anyway. Updates are signed by us, and the app refuses fakes.</p></details>
+    <details><summary>Something's wrong. Where do I get help?</summary>
+      <p>Open an issue on <a href="https://github.com/OmniTrickz/hunt-tracker/issues">GitHub</a>. For security
+        problems, use <a href="https://github.com/OmniTrickz/hunt-tracker/security/advisories/new">private reporting</a>.</p></details>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Hunt Tracker · Created by OmniTrickz</span>
+    <span class="links">
+      <a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="refund.html">Refunds</a>
+      <a href="https://github.com/OmniTrickz/hunt-tracker">GitHub</a>
+    </span>
+    <span class="fine">Hunt: Showdown 1896 is a trademark of Crytek GmbH. Hunt Tracker is an independent fan-made tool and is not
+      made by, endorsed by or affiliated with Crytek.</span>
+  </div>
+</footer>
+</body>
+</html>
