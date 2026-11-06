@@ -166,7 +166,7 @@ details p { color: var(--muted); margin: 10px 0 2px; }
   h1 { font-size: 38px; }
   h2 { font-size: 28px; }
   .trust ul { grid-template-columns: 1fr 1fr; }
-  .grid3, .plans, .steps, .points, .split { grid-template-columns: 1fr; }
+  .grid3, .steps, .points, .split { grid-template-columns: 1fr; }
   nav.top { gap: 14px; font-size: 14px; }
   nav.top .hide-sm { display: none; }
 }
@@ -177,3 +177,16 @@ details p { color: var(--muted); margin: 10px 0 2px; }
 
 /* menu links land below the sticky header */
 section[id] { scroll-margin-top: 72px; }
+
+/* pricing: keep Free / Full / Lifetime side by side down to tablet width, a bit tighter */
+@media (max-width: 1000px) {
+  .plans { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .plan { padding: 20px; }
+  .price { font-size: 32px; }
+  .plan li { font-size: 14px; }
+  .badge { display: block; width: max-content; margin: 6px 0 0; }
+}
+@media (max-width: 720px) {
+  .plans { grid-template-columns: 1fr; }
+  .badge { display: inline-block; margin: 0 0 0 8px; }
+}
