@@ -1,4 +1,4 @@
-# Hunt Tracker
+# Taketh Tracker
 
 *Created by **OmniTrickz*** · **Website: [omnitrickz.github.io/hunt-tracker](https://omnitrickz.github.io/hunt-tracker/)**
 
@@ -28,12 +28,12 @@ extracts, and how many Hunt Dollars you've made or lost. Everything is worked ou
 
 ## Install
 
-1. Download **`HuntTrackerSetup-x.y.z.exe`** from the [latest release](../../releases/latest), and only
+1. Download **`TakethTrackerSetup-x.y.z.exe`** from the [latest release](../../releases/latest), and only
    from there.
 2. Run it. Windows will probably say *"Windows protected your PC"*: this free hobby app doesn't have a
    Windows code-signing certificate yet, so Windows can't vouch for who made it. If you downloaded it from
    the link above, click **More info → Run anyway**. Careful users can first compare the file's SHA-256
-   (PowerShell: `Get-FileHash .\HuntTrackerSetup-x.y.z.exe`) with the `sha256` in that release's
+   (PowerShell: `Get-FileHash .\TakethTrackerSetup-x.y.z.exe`) with the `sha256` in that release's
    `.manifest.json`. Both come from GitHub, so this catches a broken or swapped download, not a
    compromised GitHub account.
 3. A **setup window** opens with your **Hunt folder** found automatically (any drive or Steam library).
@@ -62,8 +62,8 @@ extracts, and how many Hunt Dollars you've made or lost. Everything is worked ou
 | ↳ gained / spent | From your lobby balance: every rise is **gained** (match payouts, challenge rewards), every drop is **spent** (hunters, gear, restocks). Gained − spent = net |
 | Timer | How long this session has been running |
 
-Don't want one of these on screen? Press **Ctrl+Shift+E** and use **Hide K/D**, **Hide Extracts** or
-**Hide Hunt $** under *Hide info*. They're still tracked (and in Session history), just not shown.
+Don't want one of these on screen? Press **Ctrl+Shift+E** and use **Hide Time** (the session timer and last
+event at the top), **Hide K/D**, **Hide Extracts** or **Hide Hunt $** under *Hide info*. They're still tracked (and in Session history), just not shown.
 
 A **session** starts when you open the app (or press **Reset All**), and is saved to your session history.
 If the app is restarted within 30 minutes, it carries on the same session.
@@ -76,7 +76,7 @@ how many kills you usually get per match, and every session with its individual 
 
 ## How it works
 
-Hunt Tracker never touches the game. It only looks at things Hunt already puts on your disk and screen.
+Taketh Tracker never touches the game. It only looks at things Hunt already puts on your disk and screen.
 
 ### 1. Hunt's log file: matches, deaths, extracts
 
@@ -204,8 +204,8 @@ The log (`tracker-log.txt`, tray → **Open data folder**) records what was read
 
 ## Updates
 
-When you open Hunt Tracker it checks this page right away. If there's a new release, it shows what's new and
-asks **Install now / Later**. Install now downloads it, closes Hunt Tracker, installs, and starts it again,
+When you open Taketh Tracker it checks this page right away. If there's a new release, it shows what's new and
+asks **Install now / Later**. Install now downloads it, closes Taketh Tracker, installs, and starts it again,
 with your session and settings kept.
 
 While it's running it also checks every 30 minutes: you get a notification, plus an **Update to vX.Y.Z** button
@@ -222,5 +222,5 @@ Versions 1.0.0 to 1.0.4 don't check signatures at all. If you're on one of those
 
 ## Uninstall
 
-Windows **Settings → Apps → Hunt Tracker → Uninstall**. It removes only the files it installed. Your
+Windows **Settings → Apps → Taketh Tracker → Uninstall**. It removes only the files it installed. Your
 session history in `%LOCALAPPDATA%\HuntTracker` is kept unless you delete that folder.

@@ -14,7 +14,7 @@ later check a signed manifest (version, file name, SHA-256), which also stops ol
 
 ## How releases are protected
 
-- Every release has a `HuntTrackerSetup-x.y.z.manifest.json` signed with an Ed25519 key. The app verifies
+- Every release has a `TakethTrackerSetup-x.y.z.manifest.json` signed with an Ed25519 key. The app verifies
   it against the public keys built into the app, refuses versions that aren't newer
   than the installed one, and checks the downloaded installer's size and SHA-256 against the manifest
   before running it.
